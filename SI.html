@@ -11,7 +11,7 @@ gtag('config', 'G-M5G6F8Q09V');
 </script>
 <!--- We participate in the US government's analytics program. See the data at analytics.usa.gov -->
 <script  language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pua=UA-23806328-1&yt=true&exts=aac,arc,arj,asf,asx,bin,flv,gif,gzip,hqx,jar,mp2,msp,phps,qt,qutm,mxd,ram,sea,sit,tar,torrent,tsv,wav,wpd,xml,z" type="text/javascript"></script>
-    <title>FIT tool: Regional Economic Impact Analysis for North Pacific Fisheries</title>
+    <title>FIT tool: SwimmingIndividuals</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/nmfs-ost/FIT-graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -39,38 +39,38 @@ gtag('config', 'G-M5G6F8Q09V');
         <div class="mywrap">
             
             <h2 class ="title">
-              Tool: Regional Economic Impact Analysis for North Pacific Fisheries (REIA)
+              Tool: SwimmingIndividuals (SI)
             </h2>
         </div>
         <br>
         <div class="mywrap">
               
-              <button class = "codelink" title="link to online application" onclick=" window.open('https://nwecon.psmfc.org/application/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Online application unavailable">
                 Online Application
                 </button>
               
 
               
-                <button class = "codelink nolink" title="Downloadable application unavailable">
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/mattwoodstock/SwimmingIndividuals/releases/tag/v1.0.0', '_blank'); return false;">
                 Download Application
                 </button>
               
 
               
-               <button class = "codelink" title="link to website" onclick=" window.open('https://nwecon.psmfc.org/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Website unavailable">
                 Website
                 </button>
               
 
 
               
-               <button class = "codelink" title="link to documentation" onclick=" window.open('https://nwecon.psmfc.org/RegionalImpactAnalysis_UserManual.pdf', '_blank'); return false;">
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://mattwoodstock.github.io/SwimmingIndividuals/', '_blank'); return false;">
                 Documentation
                 </button>
               
 
               
-                <button class = "codelink nolink" title="Code Repository unavailable">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/mattwoodstock/SwimmingIndividuals', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -80,6 +80,9 @@ gtag('config', 'G-M5G6F8Q09V');
               work well for folks using screen readers. -->
               <!--  -->
 
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mattwoodstock/SwimmingIndividuals?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -91,7 +94,7 @@ gtag('config', 'G-M5G6F8Q09V');
         
         <h3>Authors</h3>
         <p>
-        C.K. Seung and S. Miller.
+        Matthew Woodstock, Jann Paul Mattern, Zhen Wu, Gregory Britten
         </p>
         
 
@@ -99,11 +102,20 @@ gtag('config', 'G-M5G6F8Q09V');
 
         <h3>Description</h3>
         <p>
-          The Regional Impact Analysis web application was developed to assist economists and social scientists working with Alaska fisheries in estimating the economic impacts of changes in fishery policies. This web-based application runs a 10 region Multi-Regional Social Accounting Matrix (10MRSAM) model.
+          SwimmingIndividuals is an open-source, high-performance agent-based model (ABM) for simulating marine ecosystems. Written in the Julia language, its hybrid CPU/GPU architecture enables large-scale simulations, tracking the life history, behavior, and interactions of millions of individual organisms as they navigate a dynamic, spatially-explicit world. Each agent is governed by a suite of detailed sub-models, including physics-based visual predation, adaptive movement and behavior (such as diel vertical migration), flexible bioenergetics, and complex fisheries interactions. The framework is designed to explore how these individual-level processes generate emergent population and community dynamics. As a powerful and flexible tool, SwimmingIndividuals allows researchers, managers, and students to conduct in-silico experiments to test ecological theory, evaluate the impacts of fisheries, and project ecosystem responses to environmental change.
         </p>
 
         
 
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          In Julia, enter the package manager by pressing the `]` key, then install from GitHub:<br><br>
+        <code>]add https://github.com/mattwoodstock/SwimmingIndividuals</code><br><br>
+        More details on installation and usage are available on the <a href="https://github.com/mattwoodstock/SwimmingIndividuals">the project's GitHub page </a>.
+        </p>
         
 
         
@@ -114,7 +126,7 @@ gtag('config', 'G-M5G6F8Q09V');
           <h3>
           Citation
           </h3>
-            <p>Seung, C. K. (2022). Regional economic analysis for fishery-dependent communities in Southwest Alaska. <i>NOAA Technical Memorandum NMFS-AFSC ; 444</i>. <a href="https://doi.org/10.25923/67F4-E184">https://doi.org/10.25923/67F4-E184</a></p>
+            <p>Matt Woodstock. (2025). <i>mattwoodstock/SwimmingIndividuals: Initial Release</i> (Version v1.0.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/ZENODO.17132410">https://doi.org/10.5281/ZENODO.17132410</a></p>
           
           
                   
@@ -124,11 +136,15 @@ gtag('config', 'G-M5G6F8Q09V');
           
           <ul>
           
-            <li>Economics</li>
+            <li>Ecosystem</li>
           
-            <li>North Pacific</li>
+            <li>Fisheries</li>
           
-            <li>Fish and Fisheries</li>
+            <li>Individual Based Model</li>
+          
+            <li>Multispecies Model</li>
+          
+            <li>Spatial Model</li>
           
           </ul>
           
